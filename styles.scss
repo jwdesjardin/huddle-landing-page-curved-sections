@@ -8,6 +8,22 @@
   --desktop: 1440px;
 }
 
+// scss variables
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$very-pale-blue: hsl(207, 100%, 98%);
+$mobile: 375px;
+$desktop: 1440px;
+
+// simple reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -19,5 +35,55 @@ h4 {
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--very-dark-cyan);
-  background-color: #f2f2f2;
+  background-color: white;
+  padding: 24px;
+}
+
+.HEADER {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .HEADER_image {
+    width: 96px;
+  }
+  .HEADER_button {
+    border: 1px solid $pink;
+    background-color: white;
+    width: 80px;
+    height: 24px;
+    color: $pink;
+    font-size: 9.41px;
+    border-radius: 150px;
+  }
+}
+
+.HERO {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.5rem;
+  .HERO_heading {
+    font-size: 24px;
+  }
+  .HERO_text {
+    font-size: 14px;
+    margin: 2rem 0;
+  }
+  .HERO_button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: $pink;
+    color: white;
+    border-radius: 150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+  }
+  .HERO_image {
+    width: 100%;
+    margin-top: 6rem;
+  }
 }
