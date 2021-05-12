@@ -29,6 +29,15 @@ body {
   background-color: white;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .HEADER {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,6 +140,69 @@ body {
 .DATA-SECTION .DATA-SECTION_BOX .DATA-SECTION_BOX__text {
   color: #808e9a;
   font-size: 13px;
+}
+
+.SALES-INFO-SECTION {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  padding: 2rem 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.SALES-INFO-SECTION .SALES-INFO-SECTION__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0;
+}
+
+.SALES-INFO-SECTION .SALES-INFO-SECTION__box .SALES-INFO-SECTION__box_image {
+  width: 90%;
+}
+
+.SALES-INFO-SECTION .SALES-INFO-SECTION__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.SALES-INFO-SECTION .SALES-INFO-SECTION__content .SALES-INFO-SECTION__content_heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.SALES-INFO-SECTION .SALES-INFO-SECTION__content .SALES-INFO-SECTION__content_text {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 2rem 0;
+}
+
+.blue-bg {
+  background-color: #f5faff;
+}
+
+.transform-up-10 {
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
 }
 
 .FOOTER_svg {

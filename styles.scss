@@ -38,6 +38,15 @@ body {
   background-color: white;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 .HEADER {
   display: flex;
   justify-content: space-between;
@@ -107,6 +116,47 @@ body {
       font-size: 13px;
     }
   }
+}
+
+.SALES-INFO-SECTION {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2rem 0;
+  transform: translateY(-10px);
+  .SALES-INFO-SECTION__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    .SALES-INFO-SECTION__box_image {
+      width: 90%;
+    }
+  }
+  .SALES-INFO-SECTION__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    margin: 2rem 0;
+    .SALES-INFO-SECTION__content_heading {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .SALES-INFO-SECTION__content_text {
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 2rem 0;
+    }
+  }
+}
+
+.blue-bg {
+  background-color: $very-pale-blue;
+}
+
+.transform-up-10 {
+  transform: translateY(-12px);
 }
 
 .FOOTER_svg {
