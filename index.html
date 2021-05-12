@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:wght@700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,11 +19,14 @@
 </head>
 <body>
 
+  <!-- HEADER  -->
   <div class='HEADER'>
     <img class='HEADER_image' src="/images/logo.svg" alt="huddle logo">
     <button class="HEADER_button">Try It Free</button>
   </div>
 
+
+  <!-- HERO -->
   <div class='HERO'>
     <h1 class='HERO_heading' >Build The Community Your Fans Will Love</h1>
     <p class='HERO_text'>Huddle re-imagines the way we build communities. You have a voice, but so does 
@@ -33,16 +37,6 @@
     <img class='HERO_image' src="./images/screen-mockups.svg" alt="illustration of mockups">
   </div>
 
-
-
-
- 
-
-  
-
-   
-
-  
 
   1.4k+
   Communities Formed
@@ -67,17 +61,51 @@
   Ready To Build Your Community?
   Get Started For Free
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
   
-  Phone: +1-543-123-4567
-  example@huddle.com
+  <!-- FOOTER SECTION -->
+  <section class='FOOTER'>
 
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
+    <!-- footer newletter -->
+    <div class='FOOTER_NEWSLETTER'>
+      <p class='FOOTER_NEWSLETTER__heading'>Newsletter</p>
+      <p class='FOOTER_NEWSLETTER__text'>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+        send you spam or pass on your email address</p>
+      <input class='FOOTER_NEWSLETTER__input' type="text">
+      <button class='FOOTER_NEWSLETTER__button'>Subscribe</button>
+    </div>
 
-  Subscribe
+    <!-- footer brand -->
+    <div class='FOOTER_BRAND'>
+      <img class='FOOTER_BRAND__image' src="./images/logo-white.svg" alt="huddle brand logo">
+      <p class='FOOTER_BRAND__text' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+        vestibulum a, ultrices quis sem.</p>
+
+        <!-- footer brand contact -->
+        <div class='FOOTER_BRAND_CONTACT'>
+          <div class='FOOTER_BRAND_CONTACT__row'>
+            <img class='FOOTER_BRAND_CONTACT__row_image' src="./images/icon-phone.svg" alt="phone icon" width='18px'>
+            <p class='FOOTER_BRAND_CONTACT__row_text'>
+              Phone: +1-543-123-4567
+            </p>
+          </div>
+          <div class='FOOTER_BRAND_CONTACT__row'>
+            <img class='FOOTER_BRAND_CONTACT__row_image' src="./images/icon-email.svg" alt="email icon" width='18px'>
+            <p class='FOOTER_BRAND_CONTACT__row_text'>
+              example@huddle.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer social -->
+      <div class='FOOTER_SOCIAL'>
+        <a href="" class='FOOTER_SOCIAL__link'><i class="fab fa-facebook-square"></i></a>
+        <a href="" class='FOOTER_SOCIAL__link'><i class="fab fa-instagram"></i></a>
+        <a href="" class='FOOTER_SOCIAL__link'><i class="fab fa-twitter-square"></i></i></a>
+      </div>
+
+  </section>
+
 
   <footer>
     <p class="attribution">
