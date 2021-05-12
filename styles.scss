@@ -1,13 +1,3 @@
-:root {
-  --pink: hsl(322, 100%, 66%);
-  --light-pink: hsl(321, 100%, 78%);
-  --light-red: hsl(0, 100%, 63%);
-  --very-dark-cyan: hsl(192, 100%, 9%);
-  --very-pale-blue: hsl(207, 100%, 98%);
-  --mobile: 375px;
-  --desktop: 1440px;
-}
-
 // scss variables
 $pink: hsl(322, 100%, 66%);
 $light-pink: hsl(321, 100%, 78%);
@@ -34,24 +24,39 @@ h4 {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: var(--very-dark-cyan);
+  color: $very-dark-cyan;
   background-color: white;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+// utility classes
+
+.blue-bg {
+  background-color: $very-pale-blue;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.transform-up-10 {
+  transform: translateY(-12px);
 }
+
+.transform-down-10 {
+  transform: translateY(10px);
+}
+
+.flex-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.empty-box-150 {
+  height: 150px;
+}
+// components
 
 .HEADER {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+  margin-bottom: 5rem;
   .HEADER_image {
     width: 96px;
   }
@@ -67,7 +72,7 @@ body {
 }
 
 .HERO {
-  margin: 100px 0;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -103,7 +108,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin: 4rem 0;
     .DATA-SECTION_BOX__image {
       width: 36px;
       transform: translateX(-66px);
@@ -119,8 +124,6 @@ body {
 }
 
 .SALES-INFO-SECTION {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
   padding: 2rem 0;
   transform: translateY(-10px);
   .SALES-INFO-SECTION__box {
@@ -129,7 +132,8 @@ body {
     justify-content: center;
     margin: 2rem 0;
     .SALES-INFO-SECTION__box_image {
-      width: 90%;
+      width: 75%;
+      margin: 2rem 0;
     }
   }
   .SALES-INFO-SECTION__content {
@@ -138,7 +142,7 @@ body {
     align-items: center;
     justify-self: center;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 1.5rem;
     .SALES-INFO-SECTION__content_heading {
       font-size: 20px;
       font-weight: 700;
@@ -146,21 +150,9 @@ body {
     .SALES-INFO-SECTION__content_text {
       font-size: 14px;
       line-height: 1.8;
-      margin: 2rem 0;
+      margin: 1rem 0;
     }
   }
-}
-
-.blue-bg {
-  background-color: $very-pale-blue;
-}
-
-.transform-up-10 {
-  transform: translateY(-12px);
-}
-
-.FOOTER_svg {
-  transform: translateY(10px);
 }
 
 .FOOTER {
@@ -233,4 +225,13 @@ body {
       margin-right: 1rem;
     }
   }
+}
+
+.ATTRIBUTION {
+  font-size: 11px;
+  text-align: center;
+}
+
+.ATTRIBUTION a {
+  color: hsl(228, 45%, 44%);
 }
