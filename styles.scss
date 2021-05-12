@@ -88,6 +88,10 @@ body {
   }
 }
 
+.FOOTER_svg {
+  transform: translateY(10px);
+}
+
 .FOOTER {
   background-color: $very-dark-cyan;
   color: white;
@@ -96,6 +100,7 @@ body {
   flex-direction: column;
   font-size: 14px;
   font-weight: 600;
+
   .FOOTER_NEWSLETTER {
     margin-bottom: 85px;
     .FOOTER_NEWSLETTER__heading {

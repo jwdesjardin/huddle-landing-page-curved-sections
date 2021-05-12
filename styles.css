@@ -101,6 +101,11 @@ body {
   margin-top: 6rem;
 }
 
+.FOOTER_svg {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
 .FOOTER {
   background-color: #00252e;
   color: white;
