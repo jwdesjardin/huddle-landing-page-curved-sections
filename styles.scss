@@ -84,7 +84,28 @@ body {
   }
   .HERO_image {
     width: 100%;
+    margin: 6rem 0 1rem;
+  }
+}
+
+.DATA-SECTION {
+  .DATA-SECTION_BOX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 6rem;
+    .DATA-SECTION_BOX__image {
+      width: 36px;
+      transform: translateX(-66px);
+    }
+    .DATA-SECTION_BOX__heading {
+      font-size: 61px;
+    }
+    .DATA-SECTION_BOX__text {
+      color: #808e9a;
+      font-size: 13px;
+    }
   }
 }
 
