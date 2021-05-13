@@ -54,11 +54,17 @@ const HeroButton = styled.button`
 	color: white;
 	border-radius: 150px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-	margin: 1rem 0;
+	margin: 2rem 0 1rem;
+	transition: all 0.2s linear;
+	&:hover {
+		background-color: var(--light-pink);
+		transform: scale(0.9);
+	}
 	@media (min-width: 1440px) {
 		font-size: 20px;
 	}
 `
 const HeroImg = styled.img`
 	width: 100%;
+	max-width: 800px;
 `

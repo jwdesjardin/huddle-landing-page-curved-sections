@@ -60,6 +60,7 @@ export default function Home() {
 				text="You wouldn't paginate a conversation in real life, so why do it online? Our threads have
         just-in-time loading for a more natural flow."
 				bgBlue={false}
+				reversed={true}
 			></SalesInfoSection>
 
 			{/* svg section 3 topper  */}
@@ -102,41 +103,46 @@ export default function Home() {
 
 const SectionTopSVG1 = styled.div`
 	width: 100%;
-	height: 12vw;
+	height: 30vw;
 	background: center / cover url('/images/bg-section-top-mobile-1.svg') no-repeat;
 	@media (min-width: 1440px) {
 		background: center / cover url('/images/bg-section-top-desktop-1.svg') no-repeat;
+		height: 12vw;
 	}
 `
 const SectionTopSVG2 = styled.div`
 	width: 100%;
-	height: 12vw;
+	height: 30vw;
 	background: center / cover url('/images/bg-section-top-mobile-2.svg') no-repeat;
 	@media (min-width: 1440px) {
 		background: center / cover url('/images/bg-section-top-desktop-2.svg') no-repeat;
+		height: 12vw;
 	}
 `
 const SectionBottomSVG1 = styled.div`
 	width: 100%;
-	height: 12vw;
+	height: 15vw;
 	background: center / cover url('/images/bg-section-bottom-mobile-1.svg') no-repeat;
 	@media (min-width: 1440px) {
 		background: center / cover url('/images/bg-section-bottom-desktop-1.svg') no-repeat;
+		height: 12vw;
 	}
 `
 const SectionBottomSVG2 = styled.div`
 	width: 100%;
-	height: 12vw;
+	height: 30vw;
 	background: center / cover url('/images/bg-section-bottom-mobile-2.svg') no-repeat;
 	@media (min-width: 1440px) {
 		background: center / cover url('/images/bg-section-bottom-desktop-2.svg') no-repeat;
+		height: 12vw;
 	}
 `
 const FooterTopSVG = styled.div`
 	width: 100%;
-	height: 12vw;
+	height: 15vw;
 	background: center / cover url('/images/bg-footer-top-mobile.svg') no-repeat;
 	@media (min-width: 1440px) {
 		background: center / cover url('/images/bg-footer-top-desktop.svg') no-repeat;
+		height: 12vw;
 	}
 `
