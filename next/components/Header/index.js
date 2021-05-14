@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const Header = () => {
 	return (
 		<HeaderBox className='contained'>
-			<HeaderLogo src='/images/logo.svg' alt='huddle logo' />
+			<Image width='240px' height='38px' src='/images/logo.svg' alt='huddle logo' />
 			<HeaderButton>Try It Free</HeaderButton>
 		</HeaderBox>
 	)

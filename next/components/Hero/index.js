@@ -14,7 +14,7 @@ export const Hero = ({ heading, text, button, imgURL, altText }) => {
 			{/* OPTIONAL IMAGE */}
 			{imgURL && (
 				<div style={{ margin: '6rem 0 1rem' }}>
-					<HeroImg src={imgURL} alt={altText} />
+					<Image src={imgURL} alt={altText} width='1016px' height='720px' />
 				</div>
 			)}
 		</HeroBox>
@@ -63,8 +63,4 @@ const HeroButton = styled.button`
 	@media (min-width: 1440px) {
 		font-size: 20px;
 	}
-`
-const HeroImg = styled.img`
-	width: 100%;
-	max-width: 800px;
 `
