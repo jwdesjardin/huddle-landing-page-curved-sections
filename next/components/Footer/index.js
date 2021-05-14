@@ -7,26 +7,33 @@ import { FooterBrand } from './FooterBrand'
 import { FooterSocial } from './FooterSocial'
 
 export const Footer = () => {
-  return (
-    <FooterBox>
-      {/* footer newletter  */}
-      <FooterNewsletter></FooterNewsletter>
+	return (
+		<FooterBox>
+			<div className='flex-row contained'>
+				{/* footer newletter  */}
+				<div className='place-second' style={{ maxWidth: '600px' }}>
+					<FooterNewsletter></FooterNewsletter>
+				</div>
 
-      {/* footer brand  */}
-      <FooterBrand></FooterBrand>
+				<div style={{ maxWidth: '340px' }}>
+					{/* footer brand  */}
+					<FooterBrand></FooterBrand>
 
-      {/* footer social */}
-      <FooterSocial></FooterSocial>
-    </FooterBox>
-  )
+					{/* footer social */}
+					<FooterSocial></FooterSocial>
+				</div>
+			</div>
+		</FooterBox>
+	)
 }
 
 const FooterBox = styled.div`
-  background-color: var(--very-dark-cyan);
-  color: white;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  font-weight: 600;
+	background-color: var(--very-dark-cyan);
+	color: white;
+	padding: 32px;
+	font-size: 14px;
+	font-weight: 600;
+	@media (min-width: 1440px) {
+		padding: 96px;
+	}
 `
