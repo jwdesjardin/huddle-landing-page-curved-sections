@@ -7,7 +7,7 @@ export const SalesInfoSection = ({ imgURL, altText, title, text, bgBlue, reverse
 		<SalesInfoSectionContainer className={bgBlue ? 'blue-bg' : ''}>
 			<div className='flex-row contained'>
 				<ImageBox className={reversed ? 'place-second' : ''}>
-					<SalesInfoImage src={imgURL} alt={altText} />
+					<Image src={imgURL} alt={altText} height='560px' width='560px' />
 				</ImageBox>
 				<SalesInfoContentBox>
 					<SalesInfoHeading>{title}</SalesInfoHeading>
@@ -54,17 +54,11 @@ const SalesInfotext = styled.p`
 		font-size: 16px;
 	}
 `
-const SalesInfoImage = styled.img`
-	margin: 4rem 0;
-	width: 100%;
-	padding: 2rem;
-	@media (min-width: 1440px) {
-		width: 100%;
-	}
-`
 
 const ImageBox = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 4rem 0;
+	padding: 2rem;
 `
