@@ -84,7 +84,7 @@ export default function Home() {
 			<div className='empty-box-150'></div>
 
 			{/* footer svg topper  */}
-			<FooterTopSVG class='svg' />
+			<FooterTopSVG className='svg' />
 			{/* FOOTER SECTION  */}
 			<Footer></Footer>
 
