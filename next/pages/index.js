@@ -19,6 +19,11 @@ export default function Home() {
 					integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=='
 					crossOrigin='anonymous'
 				/>
+				<link rel='preconnect' href='https://fonts.gstatic.com' />
+				<link
+					href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap'
+					rel='stylesheet'
+				/>
 			</Head>
 
 			{/* HEADER   */}
@@ -79,7 +84,7 @@ export default function Home() {
 			{/* svg section 3 base  */}
 			<SectionBottomSVG2 className='svg' />
 
-			<Hero heading={`Ready To Build Your Community?`} button={true}></Hero>
+			<Hero heading={`Ready To Build Your Community?`} button={true} secondary={true}></Hero>
 
 			<div className='empty-box-150'></div>
 
