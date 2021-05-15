@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+
+p,
+a,
+button {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	color: #00252e;
+	background-color: white;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--pink: hsl(322, 100%, 66%);
+	--light-pink: hsl(321, 100%, 78%);
+	--light-red: hsl(0, 100%, 63%);
+	--very-dark-cyan: hsl(192, 100%, 9%);
+	--very-pale-blue: hsl(207, 100%, 98%);
+	--mobile: 375px;
+	--desktop: 1440px;
+}
+
+/* utility classes */
+
+.blue-bg {
+	background-color: var(--very-pale-blue);
+}
+
+.transform-up-10 {
+	transform: translateY(-12px);
+}
+
+.svg {
+	display: block;
+}
+
+.flex-row {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.empty-box-150 {
+	height: 150px;
+}
+
+.contained {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.place-second {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.flex-row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.empty-box-150 {
+		height: 225px;
+	}
+}
