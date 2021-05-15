@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
 h1,
 h2,
 h3,
@@ -6,8 +8,13 @@ h4 {
 	font-weight: 700;
 }
 
-body {
+p,
+a,
+button {
 	font-family: 'Open Sans', sans-serif;
+}
+
+body {
 	color: #00252e;
 	background-color: white;
 }
@@ -53,28 +60,24 @@ a {
 	grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 1440px) {
-	.flex-row {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
 .empty-box-150 {
 	height: 150px;
 }
 
 .contained {
-	max-width: 1440px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
-img {
-	max-width: 800px;
-}
-
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
 	.place-second {
 		grid-column: 2;
 		grid-row: 1;
+	}
+	.flex-row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.empty-box-150 {
+		height: 225px;
 	}
 }
