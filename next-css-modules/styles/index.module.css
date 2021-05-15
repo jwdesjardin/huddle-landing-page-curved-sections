@@ -1,19 +1,29 @@
 .sectionTop1 {
   width: 100%;
   height: 30vw;
+  min-height: 120px;
   background: center/cover url("/images/bg-section-top-mobile-1.svg") no-repeat;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .sectionTop1 {
     background: center/cover url("/images/bg-section-top-desktop-1.svg") no-repeat;
     height: 12vw;
   }
 }
 
+@media (min-width: 1440px) {
+  .sectionTop1 {
+    background: center/cover url("/images/bg-section-top-desktop-1.svg") no-repeat;
+    height: 12vw;
+    min-height: 180px;
+  }
+}
+
 .sectionTop2 {
   width: 100%;
   height: 30vw;
+  min-height: 120px;
   background: center/cover url("/images/bg-section-top-mobile-2.svg") no-repeat;
 }
 
@@ -21,12 +31,14 @@
   .sectionTop2 {
     background: center/cover url("/images/bg-section-top-desktop-2.svg") no-repeat;
     height: 12vw;
+    min-height: 180px;
   }
 }
 
 .sectionBottom1 {
   width: 100%;
   height: 15vw;
+  min-height: 60px;
   background: center/cover url("/images/bg-section-bottom-mobile-1.svg") no-repeat;
 }
 
@@ -34,12 +46,14 @@
   .sectionBottom1 {
     background: center/cover url("/images/bg-section-bottom-desktop-1.svg") no-repeat;
     height: 12vw;
+    min-height: 180px;
   }
 }
 
 .sectionBottom2 {
   width: 100%;
   height: 30vw;
+  min-height: 120px;
   background: center/cover url("/images/bg-section-bottom-mobile-2.svg") no-repeat;
 }
 
@@ -47,12 +61,14 @@
   .sectionBottom2 {
     background: center/cover url("/images/bg-section-bottom-desktop-2.svg") no-repeat;
     height: 12vw;
+    min-height: 180px;
   }
 }
 
 .footerTop {
   width: 100%;
   height: 15vw;
+  min-height: 60px;
   background: center/cover url("/images/bg-footer-top-mobile.svg") no-repeat;
 }
 
@@ -60,6 +76,7 @@
   .footerTop {
     background: center/cover url("/images/bg-footer-top-desktop.svg") no-repeat;
     height: 12vw;
+    min-height: 180px;
   }
 }
 /*# sourceMappingURL=index.module.css.map */
