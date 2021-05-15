@@ -28,6 +28,7 @@ const NewsletterBox = styled.div`
 const NewsletterHeading = styled.p`
 	font-size: 20px;
 	font-weight: 600;
+	text-transform: uppercase;
 	@media (min-width: 1440px) {
 		font-size: 24px;
 	}
@@ -43,22 +44,30 @@ const NewsletterText = styled.p`
 `
 
 const InputContainer = styled.div`
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	align-items: center;
+	@media (min-width: 1440px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
 `
 
 const NewsletterInput = styled.input`
-	width: 70%;
+	grid-column: 1 / span 2;
 	background-color: white;
 	border: none;
 	border-radius: 6px;
 	padding: 1rem;
-	margin-right: 1rem;
+
+	@media (min-width: 1440px) {
+		grid-column: 1 / span 3;
+		margin-right: 2rem;
+	}
 `
 
 const NewsletterButton = styled.button`
-	height: 48px;
-	width: 160px;
+	grid-column: 2 / span 1;
+	padding: 0.8rem 0;
 	background-color: var(--pink);
 	color: white;
 	border: none;
@@ -67,4 +76,7 @@ const NewsletterButton = styled.button`
 	font-weight: 700;
 	margin: 1rem 0;
 	float: right;
+	@media (min-width: 1440px) {
+		grid-column: 4 / span 3;
+	}
 `

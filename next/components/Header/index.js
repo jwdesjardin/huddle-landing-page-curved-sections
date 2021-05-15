@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const Header = () => {
 	return (
 		<HeaderBox className='contained'>
-			<Image width='240px' height='38px' src='/images/logo.svg' alt='huddle logo' />
+			<HeaderLogo src='/images/logo.svg' alt='huddle logo' />
 			<HeaderButton>Try It Free</HeaderButton>
 		</HeaderBox>
 	)
@@ -16,7 +16,7 @@ const HeaderBox = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	padding: 24px;
-	margin-bottom: 5rem;
+
 	@media (min-width: 1440px) {
 		padding: 48px;
 	}
@@ -39,6 +39,10 @@ const HeaderButton = styled.button`
 const HeaderLogo = styled.img`
 	width: 96px;
 	height: 16px;
+	@media (min-width: 768px) {
+		width: 120px;
+		height: 19px;
+	}
 	@media (min-width: 1440px) {
 		width: 240px;
 		height: 38px;

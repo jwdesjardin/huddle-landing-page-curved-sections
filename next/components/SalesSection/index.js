@@ -6,8 +6,8 @@ export const SalesInfoSection = ({ imgURL, altText, title, text, bgBlue, reverse
 	return (
 		<SalesInfoSectionContainer className={bgBlue ? 'blue-bg' : ''}>
 			<div className='flex-row contained'>
-				<ImageBox className={reversed ? 'place-second' : ''}>
-					<Image src={imgURL} alt={altText} height='560px' width='560px' />
+				<ImageBox className={reversed ? '' : 'place-second'}>
+					<Image src={imgURL} alt={altText} width='530px' height='400px' />
 				</ImageBox>
 				<SalesInfoContentBox>
 					<SalesInfoHeading>{title}</SalesInfoHeading>
@@ -39,9 +39,8 @@ const SalesInfoContentBox = styled.div`
 		align-items: flex-start;
 	}
 `
-const SalesInfoHeading = styled.p`
+const SalesInfoHeading = styled.h2`
 	font-size: 20px;
-	font-weight: 700;
 	@media (min-width: 1440px) {
 		font-size: 40px;
 	}
@@ -59,6 +58,9 @@ const ImageBox = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 4rem 0;
+	margin: 0rem 0;
 	padding: 2rem;
+	@media (min-width: 1440px) {
+		margin: 0;
+	}
 `

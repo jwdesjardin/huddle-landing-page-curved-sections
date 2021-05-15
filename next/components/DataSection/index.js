@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const DataSection = () => {
 	return (
-		<section className='flex-row contained'>
+		<section className='flex-row contained' style={{ maxWidth: '1200px' }}>
 			<DataSectionBox
 				imgURL='/images/icon-communities.svg'
 				heading='1.4k+'
@@ -23,7 +23,7 @@ const DataSectionBox = ({ imgURL, heading, text }) => {
 	return (
 		<DataSectionBoxContainer>
 			<DataSectionImageBox>
-				<Image height='32px' width='32px' src={imgURL} alt='communities icon' />
+				<Image height='48px' width='48px' src={imgURL} alt='communities icon' />
 			</DataSectionImageBox>
 			<DataSectionBoxHeading>{heading}</DataSectionBoxHeading>
 			<DataSectionBoxText>{text}</DataSectionBoxText>
@@ -49,10 +49,11 @@ const DataSectionImageBox = styled.div`
 `
 
 const DataSectionBoxHeading = styled.p`
-	font-size: 61px;
+	font-size: 56px;
 	font-weight: 700;
 	@media (min-width: 1440px) {
 		font-size: 96px;
+		line-height: 140px;
 	}
 `
 
