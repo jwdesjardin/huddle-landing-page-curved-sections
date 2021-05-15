@@ -39,6 +39,7 @@ const DataSectionBoxContainer = styled.div`
 	margin: 4rem 0;
 `
 
+// best example of using the next.js Image component with wrapper styles
 const DataSectionImageBox = styled.div`
 	width: 36px;
 	transform: translateX(-66px);
@@ -49,8 +50,13 @@ const DataSectionImageBox = styled.div`
 `
 
 const DataSectionBoxHeading = styled.p`
-	font-size: 56px;
 	font-weight: 700;
+	font-size: 56px;
+	line-height: 85px;
+	@media (min-width: 768px) {
+		font-size: 72px;
+		line-height: 110px;
+	}
 	@media (min-width: 1440px) {
 		font-size: 96px;
 		line-height: 140px;

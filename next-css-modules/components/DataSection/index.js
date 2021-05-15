@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styled from 'styled-components'
+import styles from './index.module.css'
 
 export const DataSection = () => {
 	return (
@@ -21,46 +21,12 @@ export const DataSection = () => {
 
 const DataSectionBox = ({ imgURL, heading, text }) => {
 	return (
-		<DataSectionBoxContainer>
-			<DataSectionImageBox>
+		<div className={styles.container}>
+			<div className={styles.imageBox}>
 				<Image height='48px' width='48px' src={imgURL} alt='communities icon' />
-			</DataSectionImageBox>
-			<DataSectionBoxHeading>{heading}</DataSectionBoxHeading>
-			<DataSectionBoxText>{text}</DataSectionBoxText>
-		</DataSectionBoxContainer>
+			</div>
+			<p className={styles.heading}>{heading}</p>
+			<p className={styles.text}>{text}</p>
+		</div>
 	)
 }
-
-const DataSectionBoxContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 4rem 0;
-`
-
-const DataSectionImageBox = styled.div`
-	width: 36px;
-	transform: translateX(-66px);
-	@media (min-width: 1440px) {
-		width: 56px;
-		transform: translateX(-99px);
-	}
-`
-
-const DataSectionBoxHeading = styled.p`
-	font-size: 56px;
-	font-weight: 700;
-	@media (min-width: 1440px) {
-		font-size: 96px;
-		line-height: 140px;
-	}
-`
-
-const DataSectionBoxText = styled.p`
-	color: #808e9a;
-	font-size: 13px;
-	@media (min-width: 1440px) {
-		font-size: 24px;
-	}
-`

@@ -16,7 +16,6 @@ const HeaderBox = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	padding: 24px;
-
 	@media (min-width: 1440px) {
 		padding: 48px;
 	}
@@ -24,11 +23,11 @@ const HeaderBox = styled.div`
 const HeaderButton = styled.button`
 	border: 1px solid hsl(322, 100%, 66%);
 	background-color: white;
+	color: hsl(322, 100%, 66%);
+	border-radius: 150px;
 	width: 80px;
 	height: 24px;
-	color: hsl(322, 100%, 66%);
 	font-size: 9.41px;
-	border-radius: 150px;
 	@media (min-width: 1440px) {
 		font-size: 16px;
 		width: 136px;

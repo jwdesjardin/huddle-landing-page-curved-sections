@@ -47,14 +47,6 @@ a {
 	background-color: var(--very-pale-blue);
 }
 
-.transform-up-10 {
-	transform: translateY(-12px);
-}
-
-.svg {
-	display: block;
-}
-
 .flex-row {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -65,7 +57,7 @@ a {
 }
 
 .contained {
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 

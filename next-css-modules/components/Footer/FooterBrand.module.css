@@ -1,0 +1,59 @@
+.brandText {
+  margin: 1rem 0;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.imageBox {
+  width: 120px;
+  height: 19px;
+}
+
+@media (min-width: 768px) {
+  .imageBox {
+    width: 240px;
+    height: 38px;
+  }
+}
+
+.contactContainer {
+  margin: 2.5rem 0;
+}
+
+.contactRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.contactIcon {
+  margin-right: 1.5rem;
+}
+
+.contactText {
+  font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+  .contactText {
+    font-size: 16px;
+  }
+}
+
+.socialContainer {
+  margin-top: 3rem;
+}
+
+.socialLink {
+  color: white;
+  font-size: 23px;
+  margin-right: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .socialLink {
+    font-size: 32px;
+  }
+}
+/*# sourceMappingURL=FooterBrand.module.css.map */

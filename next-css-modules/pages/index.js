@@ -4,7 +4,7 @@ import { Hero } from '../components/Hero'
 import { DataSection } from '../components/DataSection'
 import { SalesInfoSection } from '../components/SalesSection'
 import { Footer } from '../components/Footer'
-import styled from 'styled-components'
+import styles from '../styles/index.module.css'
 
 export default function Home() {
 	return (
@@ -38,7 +38,7 @@ export default function Home() {
 			<DataSection></DataSection>
 
 			{/* svg data base  */}
-			<SectionTopSVG1 className='svg' />
+			<div className={styles.sectionTop1} />
 
 			{/* SALES SECTION 1  */}
 			<SalesInfoSection
@@ -50,7 +50,7 @@ export default function Home() {
 			></SalesInfoSection>
 
 			{/* svg section 1 base  */}
-			<SectionBottomSVG1 className='svg' />
+			<div className={styles.sectionBottom1} />
 
 			{/* SALES SECTION 2  */}
 			<SalesInfoSection
@@ -64,7 +64,7 @@ export default function Home() {
 			></SalesInfoSection>
 
 			{/* svg section 3 topper  */}
-			<SectionTopSVG2 className='svg' />
+			<div className={styles.sectionTop2} />
 
 			{/* SALES SECTION 3  */}
 			<SalesInfoSection
@@ -77,14 +77,15 @@ export default function Home() {
 			></SalesInfoSection>
 
 			{/* svg section 3 base  */}
-			<SectionBottomSVG2 className='svg' />
+			<div className={styles.sectionBottom2} />
 
-			<Hero heading={`Ready To Build Your Community?`} button={true}></Hero>
+			<Hero heading={`Ready To Build Your Community?`} button={true} secondary={true}></Hero>
 
 			<div className='empty-box-150'></div>
 
 			{/* footer svg topper  */}
-			<FooterTopSVG className='svg' />
+			<div className={styles.footerTop} />
+
 			{/* FOOTER SECTION  */}
 			<Footer></Footer>
 
@@ -100,49 +101,3 @@ export default function Home() {
 		</div>
 	)
 }
-
-const SectionTopSVG1 = styled.div`
-	width: 100%;
-	height: 30vw;
-	background: center / cover url('/images/bg-section-top-mobile-1.svg') no-repeat;
-	@media (min-width: 1440px) {
-		background: center / cover url('/images/bg-section-top-desktop-1.svg') no-repeat;
-		height: 12vw;
-	}
-`
-const SectionTopSVG2 = styled.div`
-	width: 100%;
-	height: 30vw;
-	background: center / cover url('/images/bg-section-top-mobile-2.svg') no-repeat;
-	@media (min-width: 1440px) {
-		background: center / cover url('/images/bg-section-top-desktop-2.svg') no-repeat;
-		height: 12vw;
-	}
-`
-const SectionBottomSVG1 = styled.div`
-	width: 100%;
-	height: 15vw;
-	background: center / cover url('/images/bg-section-bottom-mobile-1.svg') no-repeat;
-	@media (min-width: 1440px) {
-		background: center / cover url('/images/bg-section-bottom-desktop-1.svg') no-repeat;
-		height: 12vw;
-	}
-`
-const SectionBottomSVG2 = styled.div`
-	width: 100%;
-	height: 30vw;
-	background: center / cover url('/images/bg-section-bottom-mobile-2.svg') no-repeat;
-	@media (min-width: 1440px) {
-		background: center / cover url('/images/bg-section-bottom-desktop-2.svg') no-repeat;
-		height: 12vw;
-	}
-`
-const FooterTopSVG = styled.div`
-	width: 100%;
-	height: 15vw;
-	background: center / cover url('/images/bg-footer-top-mobile.svg') no-repeat;
-	@media (min-width: 1440px) {
-		background: center / cover url('/images/bg-footer-top-desktop.svg') no-repeat;
-		height: 12vw;
-	}
-`

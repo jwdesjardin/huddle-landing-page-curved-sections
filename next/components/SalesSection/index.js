@@ -23,10 +23,6 @@ const SalesInfoSectionContainer = styled.div`
 	padding: 2rem 0;
 `
 const SalesInfoContentBox = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-self: center;
 	text-align: center;
 	margin: 2rem 1.5rem;
 	display: flex;
@@ -58,8 +54,8 @@ const ImageBox = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0rem 0;
-	padding: 2rem;
+	margin: 0rem 2rem;
+	padding: 2rem 4rem;
 	@media (min-width: 1440px) {
 		margin: 0;
 	}

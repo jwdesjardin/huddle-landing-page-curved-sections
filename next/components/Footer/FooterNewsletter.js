@@ -10,7 +10,7 @@ export const FooterNewsletter = () => {
 				send you spam or pass on your email address
 			</NewsletterText>
 			<InputContainer>
-				<NewsletterInput type='text' />
+				<NewsletterInput type='email' required />
 				<NewsletterButton>Subscribe</NewsletterButton>
 			</InputContainer>
 		</NewsletterBox>
@@ -43,7 +43,7 @@ const NewsletterText = styled.p`
 	}
 `
 
-const InputContainer = styled.div`
+const InputContainer = styled.form`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
@@ -58,6 +58,9 @@ const NewsletterInput = styled.input`
 	border: none;
 	border-radius: 6px;
 	padding: 1rem;
+	&:invalid {
+		border: 1px solid red;
+	}
 
 	@media (min-width: 1440px) {
 		grid-column: 1 / span 3;

@@ -30,10 +30,10 @@ export const Footer = () => {
 const FooterBox = styled.div`
 	background-color: var(--very-dark-cyan);
 	color: white;
-	padding: 28px;
+	padding: 86px 28px;
 	font-size: 14px;
 	font-weight: 600;
 	@media (min-width: 1440px) {
-		padding: 96px;
+		padding: 146px 96px;
 	}
 `

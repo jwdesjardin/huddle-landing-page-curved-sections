@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--very-dark-cyan);
+  color: white;
+  padding: 28px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 96px;
+  }
+}
+
+.largerColContainer {
+  max-width: 600px;
+}
+
+.mediumColContainer {
+  max-width: 340px;
+}
+/*# sourceMappingURL=index.module.css.map */

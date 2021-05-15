@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 4rem 0;
+}
+
+.imageBox {
+	width: 36px;
+	transform: translateX(-66px);
+	@media (min-width: 1440px) {
+		width: 56px;
+		transform: translateX(-99px);
+	}
+}
+
+.heading {
+	font-size: 56px;
+	font-weight: 700;
+	@media (min-width: 1440px) {
+		font-size: 96px;
+		line-height: 140px;
+	}
+}
+
+.secondary-text {
+	color: #808e9a;
+	font-size: 13px;
+	@media (min-width: 1440px) {
+		font-size: 24px;
+	}
+}

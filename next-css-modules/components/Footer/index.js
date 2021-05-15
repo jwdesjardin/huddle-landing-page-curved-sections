@@ -1,39 +1,23 @@
 import React from 'react'
-import Image from 'next/image'
-import styled from 'styled-components'
-
 import { FooterNewsletter } from './FooterNewsletter'
 import { FooterBrand } from './FooterBrand'
-import { FooterSocial } from './FooterSocial'
+
+import styles from './index.module.css'
 
 export const Footer = () => {
 	return (
-		<FooterBox>
+		<div className={styles.container}>
 			<div className='flex-row contained'>
 				{/* footer newletter  */}
-				<div className='place-second' style={{ maxWidth: '600px' }}>
+				<div className={`${styles.largeColContainer} place-second`}>
 					<FooterNewsletter></FooterNewsletter>
 				</div>
 
-				<div style={{ maxWidth: '340px' }}>
+				<div className={styles.mediumColContainer}>
 					{/* footer brand  */}
 					<FooterBrand></FooterBrand>
-
-					{/* footer social */}
-					<FooterSocial></FooterSocial>
 				</div>
 			</div>
-		</FooterBox>
+		</div>
 	)
 }
-
-const FooterBox = styled.div`
-	background-color: var(--very-dark-cyan);
-	color: white;
-	padding: 28px;
-	font-size: 14px;
-	font-weight: 600;
-	@media (min-width: 1440px) {
-		padding: 96px;
-	}
-`
