@@ -35,7 +35,6 @@
 	}
 }
 
-// probably want this to stay consistent large size and not overly responsive
 .button {
 	height: 40px;
 	width: 200px;
@@ -53,8 +52,6 @@
 		box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
 	}
 
-	/* using this method to scale up size and font of button */
-	/* also look into clamp in SCSS?  */
 	@media (min-width: 800px) {
 		font-size: 16px;
 		height: 60px;
