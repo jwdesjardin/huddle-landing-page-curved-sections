@@ -25,7 +25,7 @@ const DataSectionBox = ({ imgURL, heading, text }) => {
 			<div className={styles.imageBox}>
 				<Image height='48px' width='48px' src={imgURL} alt='communities icon' />
 			</div>
-			<p className={styles.heading}>{heading}</p>
+			<h2 className={styles.heading}>{heading}</h2>
 			<p className={styles.text}>{text}</p>
 		</div>
 	)
