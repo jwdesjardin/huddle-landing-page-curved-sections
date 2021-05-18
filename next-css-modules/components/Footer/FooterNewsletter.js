@@ -10,7 +10,7 @@ export const FooterNewsletter = () => {
 				send you spam or pass on your email address
 			</p>
 			<form className={styles.form}>
-				<input type='email' className={styles.input} required />
+				<input type='email' className={styles.input} required aria-label='email input' />
 				<button className={styles.button}>Subscribe</button>
 			</form>
 		</div>
