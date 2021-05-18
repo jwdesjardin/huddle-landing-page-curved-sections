@@ -32,13 +32,13 @@ export const FooterBrand = () => {
 
 			{/* SOCIAL LINKS */}
 			<div className={styles.socialContainer}>
-				<a className={styles.socialLink} href='#'>
+				<a href='#' className={styles.socialLink}>
 					<i className='fab fa-facebook-square'></i>
 				</a>
-				<a className={styles.socialLink}>
+				<a href='#' className={styles.socialLink}>
 					<i className='fab fa-instagram'></i>
 				</a>
-				<a className={styles.socialLink}>
+				<a href='#' className={styles.socialLink}>
 					<i className='fab fa-twitter-square'></i>
 				</a>
 			</div>
