@@ -25,6 +25,16 @@
   color: #ff52bf;
   font-size: 9.41px;
   border-radius: 150px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.button:hover {
+  border: 1px solid var(--light-pink);
+  color: var(--light-pink);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @media (min-width: 1440px) {

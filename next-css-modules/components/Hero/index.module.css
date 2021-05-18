@@ -67,6 +67,7 @@
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   margin: 2rem 0 1rem;
+  cursor: pointer;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
